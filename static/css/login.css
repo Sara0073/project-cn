@@ -1,0 +1,58 @@
+/* Global base for login page (minimal, you can expand) */
+body {
+  background-color: #B0E0E6; /* sky blue pastel */
+  color: #5C4033; /* dark chocolate text */
+  font-family: 'OpenDyslexic', 'Atkinson Hyperlegible', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.login-container {
+  padding: 28px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.9);
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+.login-section {
+  margin-bottom: 28px;
+  padding: 20px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 12px;
+}
+.section-header {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 14px;
+}
+.input-group label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  border: 2px solid #D0C0FF;
+}
+.auth-button {
+  min-width: 44px;
+  min-height: 44px;
+  background: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 16px;
+  font-family: inherit;
+}
+.camera-preview {
+  width: 100%; height: 180px; border: 2px dashed #999; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center; color:#777;
+  margin-top: 8px;
+}
+#link-status { font-size: 0.95em; color: #555; }
+#history-card { background: #e8f6f9; border-left: 6px solid #4A90E2; }

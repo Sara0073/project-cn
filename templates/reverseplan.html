@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="content" style="max-width:900px; margin:20px auto;">
+  <h2>Reverse Planning</h2>
+  <div class="input-area" style="display:flex; gap:12px; align-items:flex-end; margin-bottom:10px;">
+    <input id="final-goal" placeholder="Final goal (e.g., Master Python basics)" style="flex:1; padding:12px; font-family:inherit;">
+    <input id="target-date" type="date" style="padding:12px;">
+    <button id="create-plan-btn" class="auth-button" style="white-space:nowrap;">Create Plan</button>
+  </div>
+  <div id="plan-output" style="min-height:160px; border:1px solid #ccc; padding:12px; border-radius:8px; background:#fff;">
+    Plan will appear here.
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/reverse_planning.js') }}"></script>
+{% endblock %}
